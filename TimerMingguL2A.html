@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minggu</title>
+    <link rel="stylesheet" href="StyleSetTimer.css" />
+    <link rel="icon" href="icon-2.png">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=light"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <i class="fa-solid fa-arrow-left" id="back"></i>
+      <!-- <div class="navbar">
+        <i class="fa-solid fa-house" id="home"></i>
+        <i class="fa-solid fa-clock-rotate-left" id="riwayat"></i>
+      </div> -->
+    </nav>
+
+    <!-- JUDUL -->
+    <h1>PENYIRAMAN LATERAL 2 HARI MINGGU</h1>
+
+    <!-- Indikator -->
+      <div class="KotakIndikator" id="timerSection">
+        <div class="KotakText">Lateral 1</div>
+        <!-- Display Time dan Timer -->
+        <div class="DisplayContainer">
+          <!-- Display Time -->
+          <div class="display"><h5 id="MinTextJam1L2A">--:--</h5></div>
+          <!-- Display Timer -->
+          <div class="display"><h5 id="MinTimer1L2A">--:--</h5></div>
+        </div>
+        <!-- Switch -->
+        <input type="checkbox" id="MinSwitch1L2A" class="check" />
+        <label for="MinSwitch1L2A" class="switch"></label>
+      </div>
+
+    <!-- Atur Waktu -->
+      <div class="setTimeContainer" id="days">
+        <div class="KotakText">Atur Waktu</div>
+        <form id="TimerForm">
+          <!-- Menit -->
+          <label for="time" class="jam">Menit:</label>
+          <input class="InputMenit" type="time" id="MinTime1L2A" required/>
+          <br>
+          <!-- Durasi -->
+          <label for="durasi" class="menit">Durasi:</label>
+          <input class="InputDurasi" type="number" id="MinDurasi1L2A" min="1" required/>
+        </form>
+        <br>
+        <!-- Button -->
+         <div class="ButtonContainer">
+           <button class="ButtonTime" id="ResetWaktu1"><i class="fa-solid fa-eraser" id="btnDel"></i></button>
+          <button class="ButtonTime" onclick="setHariMingguL2A('MinTime1L2A', 'MinDurasi1L2A', 'MinSwitch1L2A', 'MinTextJam1L2A', 'MinTimer1L2A')"><i class="fa-solid fa-check " id="btnConfirm"></i></i></button>
+         </div>
+      </div>
+
+      <script src="global2.js"></script>
+    <script src="MingguL2A.js"></script>
+  </body>
+</html>

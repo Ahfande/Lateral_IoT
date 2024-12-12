@@ -1,0 +1,80 @@
+@media only screen and (max-width : 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0%;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    #back {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    #riwayat {
+        font-size: 30px;
+        color: #5383EE;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-family: "Russo One";
+        text-align: center;
+        margin-top: 26px;
+        font-size: 27px;
+        color: #4CA771;
+    }
+
+    /* BOX LATERAL */
+    .BoxContainer {
+        width: 335px;
+        margin-left: 10px;
+        height: 380px;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .boxLateral {
+        width: 129px;
+        height: 140px;
+        background-color: #008000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 4px 0px rgb(0, 0, 0, 50%);
+        margin: 0 auto;
+    }
+
+    .circle {
+        width: 59px;
+        height: 62px;
+        border-radius: 50px;
+        background-color: #42FF00;
+        margin: 0 auto;
+    }
+
+    #plant {
+        text-align: center;
+        font-size: 45px;
+        color: #fdfeff;
+        margin-left: 7px;
+        margin-top: 10px;
+    }
+
+    .TextLateral {
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        margin-top: 40px;
+    }
+}
